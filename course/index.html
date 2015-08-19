@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>UNL Course Details</title>
+
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script src="course.js"></script>
+
+  </head>
+  <body>
+
+
+    <div class="container">
+
+    <div class="jumbotron">
+    <h2>Course Catalog Search</h2>
+        <div id="errorArea"></div>
+        <p>Search UNL's Course Catalog.</p>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">Subject (ex: CSCE):</div>
+                <div class="col-md-2"><input type="text" id="inputSubject" value="CSCE"/></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">Number (ex: 120):</div>
+                <div class="col-md-2"><input type="text" id="inputNumber" value="120"/></div>
+            </div>
+            <button type="button" class="btn btn-lrg btn-primary" onclick="searchCourse()">Search</button>
+        </div>
+    </div><!-- end of jumbotron -->
+
+        <div id="courseInfo"></div>
+      </div><!--end container-->
+    </body>
+</html>

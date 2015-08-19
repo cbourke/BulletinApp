@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Dummy Page</title>
+
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script src="exercises.js"></script>
+
+  </head>
+  <body>
+
+
+    <div class="container">
+
+    <div class="jumbotron">
+    <h2>Dummy Page</h2>
+        <div id="errorArea"></div>
+        <p>This is just a dummy page to load jQuery and other hot-linked libraries
+            to use in your IDE</p>
+        <button class="btn btn-info" onclick="alert('Hello!');">Say Hello!</button>
+
+        <div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="#" onclick="update(0);">Option A</a></li>
+    <li><a href="#" onclick="update(1);">Option B</a></li>
+    <li><a href="#" onclick="update(2);">Option C</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#" onclick="update(3);">Another Option</a></li>
+  </ul>
+</div>
+        <button class="btn btn-danger" onclick="delay();">Delay</button>
+
+    </div><!-- end of jumbotron -->
+
+        <div id="mainContent"></div>
+
+      </div><!--end container-->
+    </body>
+</html>
