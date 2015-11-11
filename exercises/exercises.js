@@ -5,7 +5,10 @@
 
 
 
-
+function sayHello() {
+  //TODO: change this to make an ajax call
+  alert("hello");
+}
 
 function update(option) {
   $("#mainContent").text("Option " + option + " selected.");
